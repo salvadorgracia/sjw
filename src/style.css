@@ -20,7 +20,7 @@ header {
 main {
   background-color: #FFFDED;
   flex-grow: 1;
-  padding-inline: 10px
+  padding-inline: 10px;
 }
 
 footer {
@@ -34,6 +34,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1rem
+}
+
 img {
   display: block;
   max-inline-size: 100%;
@@ -45,7 +49,12 @@ p {
 
 a {
   text-decoration: none;
+  font-weight: bold;
   color: #134C94;
+}
+
+ul {
+  margin: 0;
 }
 
 .primary-navigation {
@@ -59,13 +68,8 @@ a {
   justify-content: center;
 }
 
-.primary-navigation a {
-  font-weight: bold;
-}
-
 .left-header {
-  background-color: #000080;
-  color: #EFE3C6
+  font-size: 1.2rem;
 }
 
 .wrapper {
@@ -89,5 +93,10 @@ a {
 .three-column-layout {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  width: 100%;
   gap: 20px;
+}
+
+.three-column-layout > * {
+  min-width: 0;
 }
