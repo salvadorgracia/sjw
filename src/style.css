@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #EFE3C6;
+  font-family: Helvetica Neue, Helvetica, Arial;
 }
 
 header {
@@ -25,6 +26,12 @@ main {
 footer {
   text-align: center;
   background-color: #EFE3C6;
+}
+
+h2 {
+  background-color: #000080;
+  color: #EFE3C6;
+  text-align: center;
 }
 
 img {
@@ -54,6 +61,11 @@ a {
 
 .primary-navigation a {
   font-weight: bold;
+}
+
+.left-header {
+  background-color: #000080;
+  color: #EFE3C6
 }
 
 .wrapper {
