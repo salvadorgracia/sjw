@@ -43,6 +43,11 @@ img {
   max-inline-size: 100%;
 }
 
+figcaption {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
 p {
   margin: 0;
 }
@@ -72,6 +77,13 @@ ul {
   font-size: 1.2rem;
 }
 
+.mid-column-img {
+  max-width: 275px;
+  float: left;
+  shape-outside: polygon(0% 85%, 100% 85%, 100% 0%, 0% 0%);
+  margin: 10px 15px 20px 0px;
+}
+
 .wrapper {
   max-inline-size: 1500px;
   padding-inline: 50px;
@@ -98,5 +110,5 @@ ul {
 }
 
 .three-column-layout > * {
-  min-width: 0;
+  min-width: 0px;
 }
