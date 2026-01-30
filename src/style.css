@@ -32,10 +32,13 @@ h2 {
   background-color: #000080;
   color: #EFE3C6;
   text-align: center;
+  margin-block: 20px;
 }
 
 h3 {
-  font-size: 1rem
+  font-size: 1rem;
+  margin-block-start: 20px;
+  margin-block-end: 0px;
 }
 
 img {
@@ -50,6 +53,7 @@ figcaption {
 
 p {
   margin: 0;
+  font-size: .9rem;
 }
 
 a {
@@ -73,8 +77,18 @@ ul {
   justify-content: center;
 }
 
-.left-header {
+.left-column-header {
   font-size: 1.2rem;
+}
+
+.indent {
+  margin-left: 15px;
+}
+
+.left-column-links {
+  margin-block: 10px;
+  font-size: 1rem;
+  text-align: left;
 }
 
 .mid-column-img {
@@ -82,6 +96,14 @@ ul {
   float: left;
   shape-outside: polygon(0% 85%, 100% 85%, 100% 0%, 0% 0%);
   margin: 10px 15px 20px 0px;
+}
+#first-rc-img {
+  margin-block-start: 20px;
+  margin-block-end: 0px;
+}
+.right-column-img {
+  margin-block-start: 10px;
+  margin-block-end: 0px;
 }
 
 .wrapper {
