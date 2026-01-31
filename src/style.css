@@ -1,3 +1,8 @@
+:root {
+  --background-dark: #EFE3C6;
+  --background-light: #FFFDED;
+  --accent-color: #000080; 
+}
 
 html, body {
   min-height: 100svh;
@@ -8,17 +13,17 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #EFE3C6;
+  background-color: var(--background-dark);
   font-family: Helvetica Neue, Helvetica, Arial;
 }
 
 header {
-  background-color: #FFFDED;
+  background-color: var(--background-light);
   padding: 0px 10px 0px;
 }
 
 main {
-  background-color: #FFFDED;
+  background-color: var(--background-light);
   flex-grow: 1;
   padding-inline: 10px;
   padding-block: 20px;
@@ -26,14 +31,14 @@ main {
 
 footer {
   text-align: center;
-  background-color: #EFE3C6;
+  background-color: var(--background-dark);
   padding-block: 15px;
   font-size: 0.9rem;
 }
 
 h2 {
-  background-color: #000080;
-  color: #EFE3C6;
+  background-color: var(--accent-color);
+  color: var(--background-light);
   text-align: center;
   margin-block: 0px;
 }
@@ -82,7 +87,7 @@ footer hr {
 }
 
 .primary-navigation {
-  background-color: #EFE3C6;
+  background-color: var(--background-dark);
 }
 
 .primary-navigation ul {
@@ -171,4 +176,22 @@ footer hr {
 
 .week-bulletin {
   color: inherit;
+}
+
+@media (width < 1000px) {
+  .three-column-layout {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #right-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .right-column-img {
+    margin-block: 0px;
+  }
 }
