@@ -14,25 +14,28 @@ body {
 
 header {
   background-color: #FFFDED;
-  padding-inline: 5px;
+  padding: 0px 5px 20px;
 }
 
 main {
   background-color: #FFFDED;
   flex-grow: 1;
   padding-inline: 10px;
+  padding-block: 20px;
 }
 
 footer {
   text-align: center;
   background-color: #EFE3C6;
+  padding-block: 15px;
+  font-size: 0.9rem;
 }
 
 h2 {
   background-color: #000080;
   color: #EFE3C6;
   text-align: center;
-  margin-block: 20px;
+  margin-block: 0px;
 }
 
 h3 {
@@ -66,6 +69,18 @@ ul {
   margin: 0;
 }
 
+hr {
+  margin-block: 20px;
+  background-color: dimgray;
+  border: 0px solid;
+  height: 1px;
+}
+
+footer hr {
+  background-color: #CCCCCC;
+  margin-block-start: 15px;
+}
+
 .primary-navigation {
   background-color: #EFE3C6;
 }
@@ -77,12 +92,16 @@ ul {
   justify-content: center;
 }
 
-.left-column-header {
+#left-column h2 {
   font-size: 1.2rem;
 }
 
 .indent {
-  margin-left: 15px;
+  text-indent: 1rem;
+}
+
+.indent-all {
+  margin-inline-start: 1rem;
 }
 
 .left-column-links {
@@ -91,16 +110,25 @@ ul {
   text-align: left;
 }
 
+#middle-column h2 {
+  margin-block-end: 10px;
+  font-size: 1.6rem;
+}
+
 .mid-column-img {
   max-width: 275px;
   float: left;
-  shape-outside: polygon(0% 85%, 100% 85%, 100% 0%, 0% 0%);
-  margin: 10px 15px 20px 0px;
+  margin: 5px 15px 5px 0px;
 }
-#first-rc-img {
-  margin-block-start: 20px;
-  margin-block-end: 0px;
+
+.caption {
+  shape-outside: polygon(0% 92%, 100% 92%, 100% 0%, 0% 0%);
 }
+
+.flow-root {
+  display: flow-root;
+}
+
 .right-column-img {
   margin-block-start: 10px;
   margin-block-end: 0px;
